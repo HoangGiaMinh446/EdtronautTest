@@ -192,7 +192,7 @@ class NPCAgent:
 
 @st.cache_resource
 def init_system(api_key):
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=api_key)
     agent = NPCAgent(llm)
     
     # Thiết lập LangGraph
